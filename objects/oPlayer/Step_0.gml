@@ -7,7 +7,7 @@ if (keyboard_check(ord("D")))
 	if(image_xscale <= 0 ){
 			image_xscale = -image_xscale;
 		}
-	if(not jumping){
+	if(not jumping and not attacking){
 		sprite_index = spr_player_walk;
 		curr_sprite = sprite_index;
 	}
@@ -20,7 +20,7 @@ if (keyboard_check(ord("A")))
 	if(image_xscale >= 0){
 			image_xscale = -image_xscale;
 		}
-	if(not jumping){
+	if(not jumping and not attacking){
 		sprite_index = spr_player_walk;
 		curr_sprite = sprite_index;
 	}
@@ -65,7 +65,7 @@ else
 
 
 // def could be changed/optimized, will have to when adding attack, but okay for now
-if( not (keyboard_check(ord("D")) or keyboard_check(ord("A")) or jumping)){
+if( not (keyboard_check(ord("D")) or keyboard_check(ord("A")) or jumping or attacking)){
 	sprite_index = spr_player_idle;
 }
 

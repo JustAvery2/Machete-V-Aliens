@@ -1,9 +1,9 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_player_walk",
-  "bboxMode":0,
-  "bbox_bottom":156,
-  "bbox_left":11,
+  "bboxMode":2,
+  "bbox_bottom":152,
+  "bbox_left":18,
   "bbox_right":87,
   "bbox_top":50,
   "collisionKind":1,
