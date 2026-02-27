@@ -1,6 +1,10 @@
 hsp = 0
 vsp += gravity_amount
 
+if (attacking){
+	sprite_index = spr_player_attack
+}
+
 if (keyboard_check(ord("D")))
 {
 	hsp = speed_amount
