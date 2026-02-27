@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oIsland",
+  "%Name":"obj_vine_short",
   "eventList":[],
   "managed":true,
-  "name":"oIsland",
+  "name":"obj_vine_short",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
     "path":"folders/objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_vine",
+    "path":"objects/obj_vine/obj_vine.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_platform_tutor",
-    "path":"sprites/spr_platform_tutor/spr_platform_tutor.yy",
+    "name":"spr_vine_short_tutor",
+    "path":"sprites/spr_vine_short_tutor/spr_vine_short_tutor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

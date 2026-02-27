@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oIsland",
-  "eventList":[],
+  "%Name":"obj_vine",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oIsland",
+  "name":"obj_vine",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -28,9 +30,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_platform_tutor",
-    "path":"sprites/spr_platform_tutor/spr_platform_tutor.yy",
+    "name":"spr_vine_tutor",
+    "path":"sprites/spr_vine_tutor/spr_vine_tutor.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_vine_tutor",
+    "path":"sprites/spr_vine_tutor/spr_vine_tutor.yy",
+  },
   "visible":true,
 }
