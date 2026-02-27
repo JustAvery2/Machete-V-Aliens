@@ -1,8 +1,7 @@
 hsp = 0
 vsp += gravity_amount
 
-if (attacking){
-	if (!place_meeting(x, y + vsp, oWall) and !place_meeting(x, y + vsp, oIsland))
+if (!place_meeting(x, y + vsp, oWall) and !place_meeting(x, y + vsp, oIsland))
 	{
 		y += vsp
 	}
@@ -14,17 +13,19 @@ if (attacking){
 		}
 		vsp = 0
 		jumping = false;
+		ground = place_meeting(x, y + 1, oIsland) or place_meeting(x, y + 1, oWall)
+		if(not attacking){
+			sprite_index = curr_sprite;
+		}
 	}
-}
-
-else{
+if ( not attacking){ // add damage condition here?
 	if (keyboard_check(ord("D")))
 	{
 		hsp = speed_amount
 		if(image_xscale <= 0 ){
 				image_xscale = -image_xscale;
 			}
-		if(not jumping and not attacking){
+		if(not jumping){
 			sprite_index = spr_player_walk;
 			curr_sprite = sprite_index;
 		}
@@ -37,13 +38,13 @@ else{
 		if(image_xscale >= 0){
 				image_xscale = -image_xscale;
 			}
-		if(not jumping and not attacking){
+		if(not jumping){
 			sprite_index = spr_player_walk;
 			curr_sprite = sprite_index;
 		}
 	}
 
-	if (keyboard_check_pressed(vk_space) and (place_meeting(x, y + 1, oIsland) or place_meeting(x, y + 1, oWall)))
+	if (keyboard_check_pressed(vk_space) and ground)
 	{
 		vsp = -20
 		sprite_index = spr_player_jump;
@@ -64,26 +65,24 @@ else{
 		hsp = 0
 	}
 
-
-	if (!place_meeting(x, y + vsp, oWall) and !place_meeting(x, y + vsp, oIsland))
-	{
-		y += vsp
-	}
-	else
-	{
-		while (!place_meeting(x, y + sign(vsp), oWall) and !place_meeting(x, y + sign(vsp), oIsland))
-		{
-			y += sign(vsp)
-		}
-		vsp = 0
-		jumping = false;
-		sprite_index = curr_sprite;
-	}
-
-
-	// def could be changed/optimized, will have to when adding attack, but okay for now
-	if( not (keyboard_check(ord("D")) or keyboard_check(ord("A")) or jumping or attacking)){
+	if( not (keyboard_check(ord("D")) or keyboard_check(ord("A")) or jumping)){
 		sprite_index = spr_player_idle;
+	}
+}
+else{
+	if(image_index == 1){
+		if(image_xscale > 0){
+			instance_create_depth(x+70, y-20, -100, oSlash);
+		}
+		else{
+			var inst = instance_create_depth(x-70, y-20, -100, oSlash);
+			inst.image_xscale = -inst.image_xscale;
+		}
+	}
+	if(image_index == 0 or image_index == 3){
+		if( instance_exists(oSlash)){
+			instance_destroy(oSlash);
+		}
 	}
 }
 
