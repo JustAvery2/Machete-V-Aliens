@@ -1,5 +1,6 @@
 hsp = 0
 vsp += gravity_amount
+sprinting = keyboard_check(vk_shift);
 
 ground = place_meeting(x, y + 1, oIsland) or place_meeting(x, y + 1, oWall)
 if (!place_meeting(x, y + vsp, oWall) and !place_meeting(x, y + vsp, oIsland))
@@ -19,15 +20,56 @@ if (!place_meeting(x, y + vsp, oWall) and !place_meeting(x, y + vsp, oIsland))
 			sprite_index = curr_sprite;
 		}
 	}
+	
+if (keyboard_check(ord("E")))
+	{
+		charging = true;
+		charge_time += 1;
+		hsp = 0;
+
+		if(not jumping){
+			sprite_index = spr_player_charge;
+			curr_sprite = sprite_index;
+		}
+	}
+	else if (charging)
+	{
+		charging = false;
+
+		if (charge_time >= charge_needed)
+		{
+			attacking = true;
+			sprite_index = spr_player_attack;
+			image_index = 0;
+		}
+		else
+		{
+			sprite_index = spr_player_idle;
+			curr_sprite = sprite_index;
+		}
+
+		charge_time = 0;
+	}
 if ( not attacking){ // add damage condition here?
 	if (keyboard_check(ord("D")))
 	{
-		hsp = speed_amount
+		if (sprinting){
+			hsp = sprint_amount
+		}
+		else{
+			hsp = speed_amount
+		}
+
 		if(image_xscale <= 0 ){
 				image_xscale = -image_xscale;
 			}
 		if(not jumping){
-			sprite_index = spr_player_walk;
+			if (sprinting){
+				sprite_index = spr_player_sprint;
+			}
+			else{
+				sprite_index = spr_player_walk;
+			}
 			curr_sprite = sprite_index;
 		}
 	
@@ -35,12 +77,23 @@ if ( not attacking){ // add damage condition here?
 
 	if (keyboard_check(ord("A")))
 	{
-		hsp = -speed_amount
+		if (sprinting){
+			hsp = -sprint_amount
+		}
+		else{
+			hsp = -speed_amount
+		}
+
 		if(image_xscale >= 0){
 				image_xscale = -image_xscale;
 			}
 		if(not jumping){
-			sprite_index = spr_player_walk;
+			if (sprinting){
+				sprite_index = spr_player_sprint;
+			}
+			else{
+				sprite_index = spr_player_walk;
+			}
 			curr_sprite = sprite_index;
 		}
 	}
@@ -94,6 +147,3 @@ if (keyboard_check(ord("P")))
 	x = 500
 	y = 500
 }
-
-
-
