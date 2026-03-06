@@ -1,4 +1,3 @@
-/*
 attacking = true
 if(jumping){
 	sprite_index = spr_player_jumpattack
