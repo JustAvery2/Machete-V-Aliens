@@ -1,6 +1,7 @@
 hsp = 0
 vsp += gravity_amount
 
+ground = place_meeting(x, y + 1, oIsland) or place_meeting(x, y + 1, oWall)
 if (!place_meeting(x, y + vsp, oWall) and !place_meeting(x, y + vsp, oIsland))
 	{
 		y += vsp
@@ -13,7 +14,7 @@ if (!place_meeting(x, y + vsp, oWall) and !place_meeting(x, y + vsp, oIsland))
 		}
 		vsp = 0
 		jumping = false;
-		ground = place_meeting(x, y + 1, oIsland) or place_meeting(x, y + 1, oWall)
+
 		if(not attacking){
 			sprite_index = curr_sprite;
 		}
