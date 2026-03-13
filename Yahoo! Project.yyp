@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"scripts","folderPath":"folders/scripts.yy","name":"scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"sprites","folderPath":"folders/sprites.yy","name":"sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"enemies","folderPath":"folders/sprites/enemies.yy","name":"enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -29,7 +30,10 @@
   },
   "name":"Yahoo! Project",
   "resources":[
+    {"id":{"name":"obj_base_enemy","path":"objects/obj_base_enemy/obj_base_enemy.yy",},},
+    {"id":{"name":"obj_big_enemy","path":"objects/obj_big_enemy/obj_big_enemy.yy",},},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},},
+    {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},},
     {"id":{"name":"obj_vine_short","path":"objects/obj_vine_short/obj_vine_short.yy",},},
     {"id":{"name":"obj_vine","path":"objects/obj_vine/obj_vine.yy",},},
     {"id":{"name":"oIsland","path":"objects/oIsland/oIsland.yy",},},
@@ -38,6 +42,7 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"Level_1","path":"rooms/Level_1/Level_1.yy",},},
     {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
+    {"id":{"name":"spawn_enemy","path":"scripts/spawn_enemy/spawn_enemy.yy",},},
     {"id":{"name":"Background_Sprite","path":"sprites/Background_Sprite/Background_Sprite.yy",},},
     {"id":{"name":"Floor_Sprite","path":"sprites/Floor_Sprite/Floor_Sprite.yy",},},
     {"id":{"name":"obj_collision_mask","path":"sprites/obj_collision_mask/obj_collision_mask.yy",},},
