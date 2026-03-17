@@ -33,6 +33,7 @@
     {"$GMObjectProperty":"v2","%Name":"max_enemies","filters":[],"listItems":[],"multiselect":false,"name":"max_enemies","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"spawn_range_x","filters":[],"listItems":[],"multiselect":false,"name":"spawn_range_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"spawn_range_y","filters":[],"listItems":[],"multiselect":false,"name":"spawn_range_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"spawn_path","filters":[],"listItems":[],"multiselect":false,"name":"spawn_path","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"path_base_enemy","path":"paths/path_base_enemy/path_base_enemy.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"path_base_enemy","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

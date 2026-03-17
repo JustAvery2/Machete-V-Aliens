@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_base_enemy",
@@ -33,6 +34,8 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"image_scale","filters":[],"listItems":[],"multiselect":false,"name":"image_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.80","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"fly_path","filters":[],"listItems":[],"multiselect":false,"name":"fly_path","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"path_base_enemy","path":"paths/path_base_enemy/path_base_enemy.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"path_base_enemy","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"speed_amount","filters":[],"listItems":[],"multiselect":false,"name":"speed_amount","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

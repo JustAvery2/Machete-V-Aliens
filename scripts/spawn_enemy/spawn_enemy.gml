@@ -1,4 +1,4 @@
-function spawn_enemy(x_pos, y_pos, range_x, range_y, enemy_obj)
+function spawn_enemy(x_pos, y_pos, range_x, range_y, enemy_obj, path)
 {
     if (object_exists(enemy_obj))
 	{
@@ -9,7 +9,11 @@ function spawn_enemy(x_pos, y_pos, range_x, range_y, enemy_obj)
         with (instance)
 		{
             image_xscale = 0; 
-            image_yscale = 0; 
+            image_yscale = 0;
+			if (path_exists(path))
+			{
+                path_start(path, 4, path_action_reverse, false); 
+            }
         }
         return instance;
     }

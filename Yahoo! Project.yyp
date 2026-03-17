@@ -10,8 +10,9 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"scripts","folderPath":"folders/scripts.yy","name":"scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"paths","folderPath":"folders/paths.yy","name":"paths","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"scripts","folderPath":"folders/scripts.yy","name":"scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"sprites","folderPath":"folders/sprites.yy","name":"sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"enemies","folderPath":"folders/sprites/enemies.yy","name":"enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"hazards","folderPath":"folders/sprites/hazards.yy","name":"hazards","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -40,6 +41,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oSlash","path":"objects/oSlash/oSlash.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
+    {"id":{"name":"path_base_enemy","path":"paths/path_base_enemy/path_base_enemy.yy",},},
     {"id":{"name":"Level_1","path":"rooms/Level_1/Level_1.yy",},},
     {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"id":{"name":"spawn_enemy","path":"scripts/spawn_enemy/spawn_enemy.yy",},},

@@ -12,7 +12,7 @@ if (spawn_timer <= 0)
 
     if (array_length(enemies_list) < max_enemies)
 	{
-        var new_enemy = spawn_enemy(x, y, spawn_range_x, spawn_range_y, enemy_to_spawn);
+        var new_enemy = spawn_enemy(x, y, spawn_range_x, spawn_range_y, enemy_to_spawn, spawn_path);
         if (new_enemy != noone)
 		{
             array_push(enemies_list, new_enemy);
