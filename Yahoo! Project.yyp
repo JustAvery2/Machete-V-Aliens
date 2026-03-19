@@ -35,6 +35,7 @@
     {"id":{"name":"obj_big_enemy","path":"objects/obj_big_enemy/obj_big_enemy.yy",},},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},},
     {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},},
+    {"id":{"name":"obj_vine_back","path":"objects/obj_vine_back/obj_vine_back.yy",},},
     {"id":{"name":"obj_vine_short","path":"objects/obj_vine_short/obj_vine_short.yy",},},
     {"id":{"name":"obj_vine","path":"objects/obj_vine/obj_vine.yy",},},
     {"id":{"name":"oIsland","path":"objects/oIsland/oIsland.yy",},},
@@ -43,6 +44,7 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"path_base_enemy","path":"paths/path_base_enemy/path_base_enemy.yy",},},
     {"id":{"name":"Level_1","path":"rooms/Level_1/Level_1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"id":{"name":"spawn_enemy","path":"scripts/spawn_enemy/spawn_enemy.yy",},},
     {"id":{"name":"Background_Sprite","path":"sprites/Background_Sprite/Background_Sprite.yy",},},
@@ -96,6 +98,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"roomId":{"name":"Level_1","path":"rooms/Level_1/Level_1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
