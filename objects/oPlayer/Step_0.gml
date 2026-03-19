@@ -161,6 +161,7 @@ else {
 			vsp = -20
 			sprite_index = spr_player_jump;
 			jumping = true;
+			audio_play_sound(sfx_player_jump, 1, false)
 		}
 
 		if (!place_meeting(x + hsp, y, oWall) and !place_meeting(x + hsp, y, oIsland))

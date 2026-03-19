@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"sfx_enemy_hurt",
+  "%Name":"sfx_player_hurt",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.28734693,
+  "duration":0.59734696,
   "exportDir":"",
-  "name":"sfx_enemy_hurt",
+  "name":"sfx_player_hurt",
   "parent":{
     "name":"sfx",
     "path":"folders/sfx.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_enemy_hurt.ogg",
+  "soundFile":"sfx_player_hurt.wav",
   "volume":1.0,
 }
