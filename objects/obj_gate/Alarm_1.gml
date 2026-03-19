@@ -1,0 +1,1 @@
+audio_play_sound(sfx_end, 1, true)
