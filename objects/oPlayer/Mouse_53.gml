@@ -1,6 +1,7 @@
 if (!attacking && !charging)
 {
     attacking = true;
+	audio_play_sound(sfx_slash, 1, false)
 
     if (jumping)
     {

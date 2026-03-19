@@ -7,7 +7,9 @@ if (place_meeting(x, y, obj_vine) || place_meeting(x, y, obj_vine_short)) {
 }
 else {
 	climbing = false
-	sprite_index = spr_player_idle
+	if(!attacking and !jumping){
+		sprite_index = spr_player_idle
+	}
 }
 
 if (climbing) {
@@ -209,11 +211,13 @@ if (attacking) {
 		}
 	}
 		
-	if(image_index >= image_number - 1) {
+	
+	if(image_index >= image_number-1) {
 		attacking = false;
 		sprite_index = spr_player_idle;
 		curr_sprite = sprite_index;
 	}
+	
 }
 
 	//Cheat Code
